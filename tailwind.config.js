@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        starry: {
+          blue: {
+            50: '#F5F8FF',
+            100: '#E6EEFF',
+            200: '#B3CDFF',
+            300: '#80ABFF',
+            400: '#4D8AFF',
+            500: '#1A68FF',
+            600: '#0051F3',
+            700: '#003DBF',
+            800: '#00298C',
+            900: '#001459',
+          },
+          yellow: {
+            100: '#FFF8E6',
+            200: '#FFECB3',
+            300: '#FFDF80',
+            400: '#FFD24D',
+            500: '#FFC61A',
+            600: '#E6B000',
+            700: '#B38900',
+            800: '#806200',
+            900: '#4D3B00',
+          },
+          purple: {
+            100: '#F0E6FF',
+            200: '#D9B3FF',
+            300: '#C180FF',
+            400: '#AA4DFF',
+            500: '#921AFF',
+            600: '#7900E6',
+            700: '#5F00B3',
+            800: '#450080',
+            900: '#2B004D',
+          },
+        },
+        comic: {
+          red: {
+            100: '#FFE6E6',
+            200: '#FFB3B3',
+            300: '#FF8080',
+            400: '#FF4D4D',
+            500: '#FF1A1A',
+            600: '#E60000',
+            700: '#B30000',
+            800: '#800000',
+            900: '#4D0000',
+          },
+          green: {
+            100: '#E6FFF2',
+            200: '#B3FFD9',
+            300: '#80FFBF',
+            400: '#4DFFA6',
+            500: '#1AFF8C',
+            600: '#00E673',
+            700: '#00B359',
+            800: '#008040',
+            900: '#004D26',
+          },
+        },
+        neutral: {
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+          950: '#020617',
+        },
+      },
+      fontFamily: {
+        comic: ['Bangers', 'cursive'],
+        body: ['Roboto', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
+      },
+      animation: {
+        'star-pulse': 'star-pulse 3s infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
+      },
+      keyframes: {
+        'star-pulse': {
+          '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+          '50%': { opacity: 0.7, transform: 'scale(1.05)' },
+        },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      backgroundImage: {
+        'starry-night': "url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+        'comic-pattern': "url('https://images.pexels.com/photos/6373305/pexels-photo-6373305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+      },
+    },
+  },
+  plugins: [],
+};
