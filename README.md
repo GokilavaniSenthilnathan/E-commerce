@@ -32,6 +32,7 @@ Make sure you have **Node.js** and **MongoDB** installed and running.
 git clone https://github.com/your-username/zidio-ecommerce.git
 cd zidio-ecommerce
 v
+install the node module packages
 2. Install dependencies
 **npm install**
 
